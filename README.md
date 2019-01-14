@@ -109,9 +109,10 @@ Scenario: Mutiplication of 2 numbers
 
 Résultat: 
 
-2 scenarios (2 ambiguous)
-6 steps (4 ambiguous, 2 skipped)
+- 2 scenarios (2 ambiguous)
+- 6 steps (4 ambiguous, 2 skipped)
 
+Le problème vient des lignes 2 et 4 de l'exemple au-dessus.
 J'ai levé l'ambiguité en modifiant un peu les 2 phrases en question.
 
 Pour voir les fichiers modifiés :

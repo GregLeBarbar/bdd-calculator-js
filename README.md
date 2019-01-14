@@ -196,3 +196,27 @@ https://github.com/GregLeBarbar/bdd-calculator-js/compare/step5...step6
 - Lancer tous les tests sauf ceux taggués 'outline'```./node_modules/.bin/cucumber-js --tags 'not @outline'```
 
 https://github.com/GregLeBarbar/bdd-calculator-js/compare/step6...step7
+
+## STEP8: Générer un rapport
+
+- Installer :
+
+```npm i cucumber-html-reporter```
+
+- Créer le fichier ```index.js``` comme la doc le demande
+- Générer le rapport en json
+
+```./node_modules/.bin/cucumber-js --format=json:cucumber_report.json```
+
+
+Voir le fichier ```cucumber_report.json``` généré
+
+- Générer le rapport en html
+
+```node index.js```
+
+
+Voir le fichier ```cucumber_report.html``` généré
+
+
+https://github.com/GregLeBarbar/bdd-calculator-js/compare/step7...step8

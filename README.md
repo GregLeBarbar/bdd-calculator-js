@@ -20,4 +20,13 @@ npm install cucumber
 ./node_modules/.bin/cucumber-js
 ```
 
+## STEP2: First scenario 'addition'
+
+```
+mkdir features
+cd features
+touch addition.feature
+```
+
+Add content to addition.feature
 

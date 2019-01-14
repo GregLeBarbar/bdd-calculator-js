@@ -88,7 +88,7 @@ On relance cucumber-js et les tests passent avec succès :
 ./node_modules/.bin/cucumber-js
 ```
 
-1 scenario (1 passed)
-3 steps (3 passed)
-0m00.001s
+Résultat:
 
+- 1 scenario (1 passed)
+- 3 steps (3 passed)

@@ -92,3 +92,28 @@ Résultat:
 
 - 1 scenario (1 passed)
 - 3 steps (3 passed)
+
+## STEP4: ajouter la multiplication et faire passer les tests
+
+**Attention**
+J'ai rencontré un problème d'ambiguité !
+
+En effet, au début j'avais la feature suivante :
+
+```
+Given the numbers 2 and 2
+When they are multiplied together
+Then should the result be 4
+```
+
+Résultat: 
+
+2 scenarios (2 ambiguous)
+6 steps (4 ambiguous, 2 skipped)
+
+J'ai levé l'ambiguité en modifiant un peu les 2 phrases en question.
+
+Pour voir les fichiers modifiés :
+
+https://github.com/GregLeBarbar/bdd-calculator-js/compare/step3...step4
+

@@ -139,3 +139,52 @@ Résultat:
 
 https://github.com/GregLeBarbar/bdd-calculator-js/compare/step4...step5
 
+
+## STEP6: Les hooks
+
+- Ajout du fichier ```hooks.js```
+- Ajout de console.log() pour comprendre le cycle d'exécution des hooks
+
+Résultat :
+
+```
+Inside BeforeALL Hook
+Inside Before Hook
+.@Given the numbers 1 and 3
+.@When they are added together
+.@Then should the result be 4
+.Inside After Hook
+.Inside Before Hook
+.@Given the numbers 1 and 2
+.@When they are added together
+.@Then should the result be 3
+.Inside After Hook
+.Inside Before Hook
+.@Given the numbers 2 and 3
+.@When they are added together
+.@Then should the result be 5
+.Inside After Hook
+.Inside Before Hook
+.@Given the numbers 4 and 2
+.@When they are added together
+.@Then should the result be 6
+.Inside After Hook
+.Inside Before Hook
+.@Given the numbers 3 and 3
+.@When they are added together
+.@Then should the result be 6
+.Inside After Hook
+.Inside Before Hook
+.@Given the numbers 2 and 2 for multiplication
+.@When they are multiplied together
+.@Then should the result of multiplication be 4
+.Inside After Hook
+.Inside AfterALL Hook
+
+
+6 scenarios (6 passed)
+18 steps (18 passed)
+```
+
+https://github.com/GregLeBarbar/bdd-calculator-js/compare/step5...step6
+

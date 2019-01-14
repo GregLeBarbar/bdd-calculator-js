@@ -22,8 +22,8 @@ npm install cucumber
 
 ## STEP2: 1er scenario 'addition'
 
-Créer le dossier feature. 
-Créer fichier addition.feature pour définir le 1er scénario
+- Créer le dossier feature. 
+- Créer le fichier addition.feature pour définir le 1er scénario
 
 ```
 mkdir features
@@ -31,7 +31,7 @@ cd features
 touch addition.feature
 ```
 
-Voir le contenu ajouter au fichier addition.feature
+Voir le contenu ajouté au fichier addition.feature
 
 Relancer cucumber pour voir que le scénario est ```undefined```
 

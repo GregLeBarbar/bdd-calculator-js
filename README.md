@@ -101,9 +101,10 @@ J'ai rencontré un problème d'ambiguité !
 En effet, au début j'avais la feature suivante :
 
 ```
-Given the numbers 2 and 2
-When they are multiplied together
-Then should the result be 4
+Scenario: Mutiplication of 2 numbers
+    Given the numbers 2 and 2
+    When they are multiplied together
+    Then should the result be 4
 ```
 
 Résultat: 

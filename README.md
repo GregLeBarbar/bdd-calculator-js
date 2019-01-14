@@ -66,22 +66,5 @@ On a :
 - 1 scenario (pending) et 3 steps 
 - 3 steps (1 pending, 2 skipped)
 
-## STEP3: créer et définir une calculatrice
 
-- Se placer à la racine du projet 
-- Créer un répertoire ```lib```
-- Dans ce répertoire créer un fichier ```calculator.js```
-
-```
-mkdir lib
-cd lib 
-touch calculator.js
-```
-
-Voir le contenu ajouté dans ```calculator.js```
-
-Voir les modifications effectuées dans ```addition_steps.js```
-
-1 scenario (1 pending)
-3 steps (1 pending, 1 skipped, 1 passed)
 

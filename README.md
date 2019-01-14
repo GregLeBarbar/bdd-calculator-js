@@ -4,15 +4,21 @@
 
 ### init npm
 
-```npm init```
+```
+npm init
+```
 
 ### install cucumber.js
 
-```npm install cucumber```
+```
+npm install cucumber
+```
 
 
 ### How run cucumber ?
 
-```./node_modules/.bin/cucumber-js```
+```
+./node_modules/.bin/cucumber-js
+```
 
 

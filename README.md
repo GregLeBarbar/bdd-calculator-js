@@ -115,6 +115,13 @@ Résultat:
 Le problème vient des lignes 2 et 4 de l'exemple au-dessus.
 J'ai levé l'ambiguité en modifiant un peu les 2 phrases en question.
 
+
+Si on veut ne lancer que 1 scenario : 
+
+```
+./node_modules/.bin/cucumber-js ./features/addition.feature
+```
+
 Pour voir les fichiers modifiés :
 
 https://github.com/GregLeBarbar/bdd-calculator-js/compare/step3...step4

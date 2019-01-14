@@ -119,3 +119,16 @@ Pour voir les fichiers modifiés :
 
 https://github.com/GregLeBarbar/bdd-calculator-js/compare/step3...step4
 
+
+## STEP5: Scénario "outline"
+
+Ajout d'scénario ```Scenario Outline``` dans ```addition.feature```
+permettant de tester plusieurs fonctionnalités grâce à l'utilisation des 
+```Data Tables```
+
+Résultat:
+- 6 scenarios (6 passed)
+- 18 steps (18 passed)
+
+https://github.com/GregLeBarbar/bdd-calculator-js/compare/step4...step5
+

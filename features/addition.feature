@@ -7,6 +7,7 @@ Feature: Addition
     When they are added together 
     Then should the result be 4
 
+  @outline
   Scenario Outline: Tests lots of additions
     Given the numbers <x> and <y>
     When they are added together 

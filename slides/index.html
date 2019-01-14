@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+            <section data-background="img/rlc.png" >
+                <h3 style="display:inline;background-color:#002b36;">Behavior Driven Development (BDD)</h3>
+            </section>
+            <section>
+                <h3>Tests automatisés</h3>
+                <ul>
+                    <li>Tests manuels couteux</li>
+                    <li>Tests manuels pas intéressants</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Tests automatisés</h3>
+                <p>sont des <strong> Tests de non regressions</strong></p>
+                <p>Pour découvrir les autres types de bugs <br/>=> Phase bêta ou alpha du produit</p>
+            </section>
+            <section>
+                <h3>Principe du 'test-first'</h3>
+                <ul>
+                    <li>BDD et TDD: <strong>on écrit les tests en 1er</strong></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Principe du 'test-first'</h3>
+                <img src="img/test-first.jpeg" />
+                <p style="font-size: 0.5em"><strong>Nouvelle tâche de codage</strong> = une raison valable de modifier la base de code.<br/>
+                   En TDD: nouvelle fonctionnalité ou une modification d'une fonctionnalité existante ou correction de bug </p>
+            </section>
+            <section>
+                <section>
+                    <h3>Avantages du 'test-first'</h3>
+                    <p>le code de l'application est facilement <strong>testable</strong><br/> <span style="font-size: 0.7em">=> Si on découvre de nouveaux bugs on peut facilement ajouter des tests</span></p>
+                </section>
+                <section>
+                    <h3>Avantages du 'test-first'</h3>
+                    <p>la base de code est <strong>minimale</strong> car vous ne devez écrire du code que pour corriger un test qui a échoué ou pour écrire un nouveau test</p>
+                </section>
+                <section>
+                    <h3>Avantages du 'test-first'</h3>
+                    <p>la base de code peut être <strong>refactorisée</strong> facilement</p>
+                </section>
+                <section>
+                    <h3>Avantages du 'test-first'</h3>
+                    <p>la dernière modification ne casse pas tout <br/> <span style="font-size: 0.7em">=> développeur plus serein</span></p>
+                </section>
+                <section>
+                    <h3>Avantages du 'test-first'</h3>
+                    <p>plus facile d'ajouter de nouvelles fonctionnalités et corriger les nouveaux bugs</p>
+                </section>
+            </section>
+            <section>
+                <h3>Inconvénient du 'test-first'</h3>
+                <p>
+                    Vous ne pouvez pas adopter facilement l'approche du test-first dans un <strong>projet en cours de développement et démarré sans cette approche</strong>. <br/>
+                    => Il est souvent <strong>très difficile de tester</strong> un code écrit sans une approche test d’abord!
+                </p>
+            </section>
+            <section>
+                <h3>Les limites du TDD</h3>
+                <p>Le plus gros problème de la TDD classique est qu’<strong>il existe une déconnexion</strong> entre ce que le <strong>produit est censé faire</strong> et ce que <strong>la suite de tests</strong> construite par l’équipe de développement <strong>teste</strong>.</p>
+                <p style="font-size: 0.7em">En gros: "Ils ont vérifié que leurs classes, méthodes, etc se comportaient comme prévu. Très bien ! Mais ont ils vérifié si le produit se comportait comme prévu ?"</p>
+            </section>
+
+            <section>
+                <h3>BDD</h3>
+                <p>BDD tente de résoudre ce problème en rendant <strong>la suite de tests directement dépendante de l'ensemble des fonctionnalités du produit</strong>.</p>
+            </section>
+
+            <section>
+                <h3>BDD</h3>
+                <p>Cette clarification modifie la règle 1 du test-first de : <br/>
+                "N'écrivez pas de nouveaux tests <strong>s'il n'y a pas de nouvelle tâche de codage</strong>" en <br/>
+                "N'écrivez pas de nouveaux tests <strong>s'il n'y a pas de changement dans le produit</strong>"</p>
+            </section>
+
+            <section>
+                <h3>BDD</h3>
+                <p>Comme une modification du produit ne représente toujours qu'une fonctionnalité ou un bogue, il vous suffit de tester les fonctionnalités ou les bogues, pas les composants ou les classes.</p>
+            </section>
+
+            <section>
+                <h3>BDD</h3>
+                <p>Les tests consistent toujours à décrire le comportement du produit et jamais à des détails techniques. C'est une différence clé avec TDD.</p>
+            </section>
+            <section>
+                <h3>BDD</h3>
+                <p>Les tests doivent être décrits de manière à ce que les parties prenantes puissent comprendre pour indiquer s'ils reflètent le comportement attendu du système. C'est pourquoi, dans le jargon BDD, les tests ne sont pas appelés tests, mais spécifications ou fonctionnalités.</p>
+            </section>
+
+            <section>
+                <h3>BDD</h3>
+                <p>BDD n’est pas seulement une pratique d’ingénierie, il faut également que l’équipe s’engage fréquemment avec les parties prenantes afin de parvenir à une compréhension commune des caractéristiques. Sinon, nous risquerions fort de tester la mauvaise fonctionnalité.</p>
+            </section>
+            <section>
+                <h3>BDD</h3>
+                <p>
+                BDD expose une bonne idée: nous devrions tester des fonctionnalités plutôt que des composants.
+                </p>
+            </section>
+
+            <section>
+                <h3>Différence entre composant et fonctionnalité</h3>
+            </section>
+
+            <section>
+                <h3>Fonctionnalité</h3>
+                <p>Une <strong>fonctionnalité</strong> est une action concrète unique que l'utilisateur peut effectuer sur le système</p>
+                
+                <ul>
+                    <li>Une fonctionnalité modifie l'état du système et/ou oblige le système à effectuer des actions sur d'autres systèmes tiers</li>
+                    <li>Une fonctionnalité décrit le comportement du système du point de vue de l'utilisateur</li>
+                    <li>Un use case peut être mappé sur plusieurs fonctionnalités</li>                 
+                    <li>Découper un use case en fonctionnalités est une activité clé de BDD</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Conposant</h3>
+                <p>Un <strong>composant</strong> est un artefact logiciel, tel que des classes, des procédures ou des fonctions ...</p>
+            </section>
+
+            <section>
+                <h3>Définition d'un produit</h3>
+                <img src="img/produit.jpeg"/>
+            </section>
+            <section>
+                <h3>TDD: tests composants</h3>
+                <img src="img/tdd.jpeg"/>
+            </section>
+            <section>
+                <h3>BDD: tests fonctionnalités</h3>
+                <img src="img/BDD.jpeg"/>
+            </section>
+
+            <section>
+                <h3>Démo</h3>
+                <ul>
+                    <li><a href="https://github.com/GregLeBarbar/bdd-calculator-js">Code</a> décomposé en 8 steps/branches</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Conclusion</h3>
+                <ul>
+                    <li>Mettre en place des tests BDD uniquement dans des applications nouvelles (et pas dans des applications existantes qui n'ont pas suivies dès le début ce principe)</li>
+                    <li>Dans certains cas, les tests unitaires peuvent s'avérer complémentaires ... là toute de suite j'ai pas d'exemple :-) </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Sources</h3>
+                <ul>
+                    <li>Livre <a href="https://www.packtpub.com/application-development/learning-behavior-driven-development-javascript">learning behavior-driven development with javascript</a></li>
+                    <li><a href="http://www.thinkcode.se/blog/2018/02/07/getting-started-with-cucumber-for-javascript">Tuto</a></li>
+                    <li><a href="https://www.udemy.com/protractor-cucumber-tutorial">Formation udemy</a></li>
+                </ul>
+            </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

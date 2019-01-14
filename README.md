@@ -20,6 +20,9 @@ npm install cucumber
 ./node_modules/.bin/cucumber-js
 ```
 
+https://github.com/GregLeBarbar/bdd-calculator-js/compare/master...step1
+
+
 ## STEP2: 1er scenario 'addition'
 
 - Créer le dossier ```features```. 
@@ -66,6 +69,10 @@ On a :
 - 1 scenario (pending) et 3 steps 
 - 3 steps (1 pending, 2 skipped)
 
+
+https://github.com/GregLeBarbar/bdd-calculator-js/compare/step1...step2
+
+
 ## STEP3: créer une calculatrice et faire passer les tests
 
 - Se placer à la racine du projet 
@@ -92,3 +99,6 @@ Résultat:
 
 - 1 scenario (1 passed)
 - 3 steps (3 passed)
+
+https://github.com/GregLeBarbar/bdd-calculator-js/compare/step2...step3
+

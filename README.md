@@ -20,6 +20,9 @@ npm install cucumber
 ./node_modules/.bin/cucumber-js
 ```
 
+https://github.com/GregLeBarbar/bdd-calculator-js/compare/master...step1
+
+
 ## STEP2: 1er scenario 'addition'
 
 - Créer le dossier ```features```. 
@@ -67,4 +70,4 @@ On a :
 - 3 steps (1 pending, 2 skipped)
 
 
-
+https://github.com/GregLeBarbar/bdd-calculator-js/compare/step1...step2

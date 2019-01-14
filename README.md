@@ -1,20 +1,20 @@
 # bdd-calculator-js
 
-## STEP1: Install cucumber.js
+## STEP1: Installer cucumber.js
 
-### Init npm
+### Initialiser npm
 
 ```
 npm init
 ```
 
-### Install cucumber.js
+### Installer cucumber.js
 
 ```
 npm install cucumber
 ```
 
-### How run cucumber ?
+### Comment exécuter cucumber-js ?
 
 ```
 ./node_modules/.bin/cucumber-js

@@ -188,9 +188,3 @@ Inside Before Hook
 
 https://github.com/GregLeBarbar/bdd-calculator-js/compare/step5...step6
 
-
-## STEP7: Les tags
-
-- Ajout du tag 'outline'
-- Lancer seulement les tests taggués 'outline' ``` ./node_modules/.bin/cucumber-js --tags '@outline' ```
-- Lancer tous les tests sauf les tests taggués 'outline' ``` ./node_modules/.bin/cucumber-js --tags 'not @outline' ```
